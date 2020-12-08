@@ -22,6 +22,7 @@ Route::get('/', function(){
     return view('front.index');
 });
 
-Route::get('/register', function(){
-    return view('front.register');
-});
+
+Route::get('/register','App\Http\Controllers\PersonalController@index');
+
+//Route::get('/register', 'PersonalController@index');
